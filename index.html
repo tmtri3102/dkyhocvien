@@ -7,168 +7,232 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<style>
-			form label {
-				margin: 16px;
+			.title {
+				width: 100px;
+				color: blue;
+				text-align: right;
+				padding-right: 12px;
 			}
-			form input {
-				margin-left: 16px;
+			h3 {
+				height: fit;
+				margin-top: 0px;
+				padding: 12px;
+				text-align: center;
+			}
+			.hobby-form {
+				border: 16px solid #8eeaf9;
+				padding-bottom: 16px;
+				max-width: 500px;
+			}
+			.student-form {
+				border: 16px solid rgb(229, 229, 229);
+				background-color: #e0f98e;
+				padding-bottom: 16px;
+				max-width: 500px;
 			}
 		</style>
 		<title>Sở Thích Của Bạn</title>
 	</head>
 	<body>
-		<h3 style="color: white; background-color: red; padding: 12px">
-			SỞ THÍCH CỦA BẠN
-		</h3>
-		<form>
-			<label
-				style="color: blue"
-				for="yourname"
-				>Họ và tên:<input
-					type="text"
-					id="yourname"
-					name="yourname"
-			/></label>
-			<br />
-			<br />
-			<label
-				for="email"
-				style="color: blue"
-				>Email:<input
-					type="email"
-					id="email"
-					name="email"
-			/></label>
-			<br />
-			<br />
-			<label
-				for="hobby"
-				style="color: blue"
-				>Sở thích:</label
-			><br />
-			<input
-				type="checkbox"
-				id="sports"
-				name="hobby"
-				value="Thể thao"
-			/>
-			<label for="sports">Thể thao</label>
-			<input
-				type="checkbox"
-				id="music"
-				name="hobby"
-				value="Âm nhạc"
-			/>
-			<label for="music">Âm nhạc</label>
-			<input
-				type="checkbox"
-				id="reading"
-				name="hobby"
-				value="Đọc sách"
-			/>
-			<label for="reading">Đọc sách</label><br />
+		<form
+			action=""
+			class="hobby-form"
+		>
+			<h3 style="color: white; background-color: red">SỞ THÍCH CỦA BẠN</h3>
+			<table>
+				<tr>
+					<td class="title"><p>Họ và tên</p></td>
+					<td style="border: 1px">
+						<input
+							type="text"
+							id="yourname"
+							name="yourname"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td class="title"><p>Email</p></td>
+					<td>
+						<input
+							type="email"
+							id="email"
+							name="email"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td
+						class="title"
+						style="margin-top: -8px"
+					>
+						<p>Sở thích</p>
+					</td>
+					<td>
+						<input
+							type="checkbox"
+							id="sports"
+							name="hobby"
+							value="Thể thao"
+						/>
+						<label for="sports">Thể thao</label>
+						<input
+							type="checkbox"
+							id="music"
+							name="hobby"
+							value="Âm nhạc"
+						/>
+						<label for="music">Âm nhạc</label>
+						<input
+							type="checkbox"
+							id="reading"
+							name="hobby"
+							value="Đọc sách"
+						/>
+						<label for="reading">Đọc sách</label><br />
 
-			<input
-				type="checkbox"
-				id="web"
-				name="hobby"
-				value="Lướt web"
-			/>
-			<label for="web">Lướt web</label>
-			<input
-				type="checkbox"
-				id="gaming"
-				name="hobby"
-				value="Chơi game"
-			/>
-			<label for="gaming">Chơi game</label>
-			<input
-				type="checkbox"
-				id="movies"
-				name="hobby"
-				value="Điện ảnh"
-			/>
-			<label for="movies">Điện ảnh</label><br />
+						<input
+							type="checkbox"
+							id="web"
+							name="hobby"
+							value="Lướt web"
+						/>
+						<label for="web">Lướt web</label>
+						<input
+							type="checkbox"
+							id="gaming"
+							name="hobby"
+							value="Chơi game"
+						/>
+						<label for="gaming">Chơi game</label>
+						<input
+							type="checkbox"
+							id="movies"
+							name="hobby"
+							value="Điện ảnh"
+						/>
+						<label for="movies">Điện ảnh</label><br />
 
-			<input
-				type="checkbox"
-				id="travel"
-				name="hobby"
-				value="Du lịch"
-			/>
-			<label for="travel">Du lịch</label><br /><br />
-
-			<button type="submit">Gửi thông tin</button>
-			<button type="reset">Nhập lại</button>
+						<input
+							type="checkbox"
+							id="travel"
+							name="hobby"
+							value="Du lịch"
+						/>
+						<label for="travel">Du lịch</label>
+					</td>
+				</tr>
+				<tr class="row">
+					<td></td>
+					<td>
+						<div style="padding-top: 12px; padding-bottom: 12px">
+							<button type="submit">Gửi thông tin</button>
+							<button type="reset">Nhập lại</button>
+						</div>
+					</td>
+				</tr>
+			</table>
 		</form>
-		<h3>ĐĂNG KÝ HỌC VIÊN</h3>
-		<form>
-			<label for="yourname">Họ và tên:</label><br />
-			<input
-				type="text"
-				id="yourname"
-				name="yourname"
-			/><br /><br />
 
-			<label for="dob">Ngày sinh:</label><br />
-			<input
-				type="date"
-				id="dob"
-				name="dob"
-			/><br /><br />
+		<form class="student-form">
+			<h3 style="color: rgb(10, 71, 238); background-color: rgb(156, 237, 220)">
+				ĐĂNG KÝ HỌC VIÊN
+			</h3>
+			<table>
+				<tr class="row">
+					<td class="title"><p>Họ và tên</p></td>
+					<td style="border: 1px">
+						<input
+							type="text"
+							id="yourname"
+							name="yourname"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td class="title"><p>Ngày sinh</p></td>
+					<td style="border: 1px">
+						<input
+							type="date"
+							id="dob"
+							name="dob"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td class="title"><p>Giới tính</p></td>
+					<td>
+						<label for="male"
+							><input
+								type="radio"
+								id="male"
+								name="gender"
+								value="Nam"
+							/>Nam</label
+						>
 
-			<label>Giới tính:</label><br />
-			<input
-				type="radio"
-				id="male"
-				name="gender"
-				value="Nam"
-			/>
-			<label for="male">Nam</label>
-			<input
-				type="radio"
-				id="female"
-				name="gender"
-				value="Nữ"
-			/>
-			<label for="female">Nữ</label><br /><br />
-
-			<label for="address">Địa chỉ:</label><br />
-			<textarea
-				id="address"
-				name="address"
-				rows="3"
-				cols="30"
-			></textarea
-			><br /><br />
-
-			<label for="class">Lớp:</label><br />
-			<select
-				id="class"
-				name="class"
-			>
-				<option value="">— Chọn lớp —</option>
-				<option value="lop1">Lớp 1</option>
-				<option value="lop2">Lớp 2</option>
-				<option value="lop3">Lớp 3</option></select
-			><br /><br />
-
-			<label for="email">Email:</label><br />
-			<input
-				type="email"
-				id="email"
-				name="email"
-			/><br /><br />
-
-			<label for="phone">Điện thoại:</label><br />
-			<input
-				type="tel"
-				id="phone"
-				name="phone"
-			/><br /><br />
-
-			<button type="submit">Đăng ký</button>
-			<button type="reset">Nhập lại</button>
+						<label for="female"
+							><input
+								type="radio"
+								id="female"
+								name="gender"
+								value="Nữ"
+							/>Nữ</label
+						>
+					</td>
+				</tr>
+				<tr>
+					<td class="title"><p>Địa chỉ</p></td>
+					<td>
+						<textarea
+							id="address"
+							name="address"
+							rows="3"
+							cols="30"
+						></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="title"><p>Lớp</p></td>
+					<td>
+						<select
+							id="class"
+							name="class"
+						>
+							<option value="">— Chọn lớp —</option>
+							<option value="lop1">Lớp 1</option>
+							<option value="lop2">Lớp 2</option>
+							<option value="lop3">Lớp 3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="title"><p>Email</p></td>
+					<td>
+						<input
+							type="email"
+							id="email"
+							name="email"
+						/>
+					</td>
+				</tr>
+				<tr></tr>
+					<td class="title"><p>Điện thoại</p></td>
+					<td>
+						<input
+							type="number"
+							id="number"
+							name="number"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit">Đăng ký</button>
+						<button type="reset">Nhập lại</button>
+					</td>
+				</tr>
+			</table>
 		</form>
 	</body>
 </html>
